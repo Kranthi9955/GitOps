@@ -41,7 +41,7 @@ GitOps/
 Developer pushes code
         |
         v
- GitHub Repo (ITkannadigaru/GitOps) [branch: main]
+ GitHub Repo (QuntamVector/GitOps) [branch: main]
         |
         v (watches & auto-syncs)
      ArgoCD
