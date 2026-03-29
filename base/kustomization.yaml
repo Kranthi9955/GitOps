@@ -16,6 +16,8 @@ resources:
   - emailservice/service.yaml
   - frontend/deployment.yaml
   - frontend/service.yaml
+  - frontend/clusterissuer.yaml
+  - frontend/ingress.yaml
   - loadgenerator/deployment.yaml
   - paymentservice/deployment.yaml
   - paymentservice/service.yaml
