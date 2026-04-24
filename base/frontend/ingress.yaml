@@ -5,7 +5,8 @@ metadata:
   labels:
     app: frontend
   annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"          # ← changed to false
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"    # ← add this too
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   ingressClassName: nginx
