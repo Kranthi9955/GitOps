@@ -4,11 +4,16 @@ metadata:
   name: letsencrypt-prod
 spec:
   acme:
-    server: https://acme-v02.api.letsencrypt.org/directory
     email: manojdevopstest@gmail.com
     privateKeySecretRef:
       name: letsencrypt-prod-account-key
+    server: https://acme-v02.api.letsencrypt.org/directory
     solvers:
-    - http01:
-        ingress:
-          ingressClassName: nginx
+    - dns01:
+        route53:
+          region: ap-northeast-1
+          hostedZoneID: Z0312260FGDP5YVX5SYW
+          accessKeyID: AKIAZLYDMPUFBRF7HZFY
+          secretAccessKeySecretRef:
+            name: route53-credentials
+            key: secret-access-key
