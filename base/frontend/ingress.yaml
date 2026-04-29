@@ -12,7 +12,7 @@ spec:
   tls:
   - hosts:
     - rcnuvas.co.in
-    secretName: secret-access-key
+    secretName: frontend-tls
   rules:
   - host: rcnuvas.co.in
     http:
