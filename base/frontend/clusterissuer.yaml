@@ -16,4 +16,4 @@ spec:
           accessKeyID: AKIAZLYDMPUFBRF7HZFY
           secretAccessKeySecretRef:
             name: route53-credentials
-            key: frontend-tls
+            key: frontend-tls-8gvln
