@@ -13,7 +13,7 @@ spec:
         route53:
           region: ap-northeast-1
           hostedZoneID: Z0312260FGDP5YVX5SYW
-          accessKeyID: AKIAZLYDMPUFBRF7HZFY
+          accessKeyID: AKIA3WUHPE7RIXHRETVY
           secretAccessKeySecretRef:
             name: route53-credentials
-            key: frontend-tls-8gvln
+            key: secret-access-key
