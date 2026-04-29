@@ -12,7 +12,7 @@ spec:
   tls:
   - hosts:
     - rcnuvas.co.in
-    secretName: frontend-tls-8gvln
+    secretName: secret-access-key
   rules:
   - host: rcnuvas.co.in
     http:
